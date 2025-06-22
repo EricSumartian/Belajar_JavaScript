@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM (Document Object Model)</title>
+</head>
+<body>
+  <h1 class="judul">Belajar DOM ( Document Object Model )</h1>
+  <p id="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis error itaque fugit voluptatum? Corporis quas, vitae facere quidem ratione accusamus deserunt velit temporibus distinctio aliquid? Soluta iure nisi officia atque?</p>
+  <ul>
+    <li class="item">Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+  </ul>
+
+  <script>
+    const judul = document.getElementsByClassName("judul");
+    console.log(judul);
+    const text = document.getElementById("text");
+    console.log(text);
+    const items = document.getElementsByTagName("li");
+    console.log(items);
+    const list = document.querySelector("li");
+    console.log(list);
+    const lists = document.querySelectorAll("li");
+    console.log(lists);
+  </script>
+</body>
+</html>
