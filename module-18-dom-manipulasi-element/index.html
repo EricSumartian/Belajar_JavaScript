@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .text{
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <h1 class="title">Ini judul</h1>
+    <p id="sub">sub judul</p>
+  </div>
+
+  <p id="paragraf">Ini Paragraf</p>
+  <ul>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+  </ul>
+
+  <script>
+    // Mengubah konten
+    // 1. element.textContent
+    // const text = document.getElementsByClassName('paragraf')[0];
+    // text.textContent = 'Ini adalah paragraf yang telah diubah';
+    // // 2.element.innerHTML
+    // const container = document.getElementById('container');
+    // container.innerHTML = '<h2>Ini adalah judul baru</h2><p>Ini adalah paragraf baru</p>';
+
+    // Mengubah atribut
+    const paragraf = document.getElementById('paragraf');
+    paragraf.setAttribute('class', 'text');
+
+    // Mengubah Gaya
+    const li = document.querySelectorAll('li');
+    li[2].style.color = 'blue';
+  </script>
+</body>
+</html>
