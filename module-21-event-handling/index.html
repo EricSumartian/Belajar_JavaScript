@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!-- <button onclick="alert('sudah diclik')">Clik</button> -->
+  <button onclick="getclick()">clik</button>
+  <p id="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, possimus?</p>
+  <!-- <button id="submit">click</button> -->
+  <script>
+    const text = document.getElementById('text');
+    function getclick() {
+      text.style.color = 'white';
+      text.style.backgroundColor = 'black';
+    }
+    text.addEventListener('mouseover', () => {
+      text.style.fontSize = '25px';
+    });
+    text.addEventListener('mouseout', () => {
+      text.style.fontSize = '16px';
+    });
+    // function getclick(){
+    //   alert('sudah diclick');
+    // }
+    // const button = document.getElementById('submit');
+    // button.addEventListener('click', () => {
+    //   alert('sudah diclick');
+    // })
+    // button.addEventListener('dblclick', () => {
+    //   alert('sudah di double click');
+    // });
+    // button.addEventListener('mouseover', () => {
+    //   alert('mouse over');
+    // });
+    // button.addEventListener('mouseout', () => {
+    //   alert('mouse out');
+    // });
+    
+  </script>
+</body>
+</html>
